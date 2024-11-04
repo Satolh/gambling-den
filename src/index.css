@@ -214,3 +214,28 @@ input[type=number]::-webkit-outer-spin-button {
 .animate{
   transition: left 0.2s;
   }
+
+  @media (max-width: 620px) {
+    .section-gambling{
+      height: 10rem;
+      width: 22rem;
+    }
+    .img-card{
+      width: 7rem;
+      height: 10rem;
+    }
+    .card-back{
+      width: 7rem;
+      height: 10rem;
+    }
+    .div-card{
+      width: 7rem;
+      height: 10rem;
+    }
+    .msj-select-card{
+      top: 43%;
+    }
+    .msj-lose,.msj-win{
+      top: 43%;
+    }
+  }

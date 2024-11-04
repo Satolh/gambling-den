@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import { LuDollarSign } from "react-icons/lu";
 import { GiPokerHand } from "react-icons/gi";
 import { FaXTwitter,FaInstagram,FaGithub, FaTwitter } from "react-icons/fa6";
@@ -22,12 +22,18 @@ function App() {
   const [win, setWin] = useState(null)
   const [isDisabled,setIsDisabled] = useState(false)
   const [isAnimating, setIsAnimating] = useState(false);
-  const [posiciones, setPosiciones] = useState([
+  const [posicionesPc, setPosicionesPc] = useState([
     { top: 0, left: 0 },
     { top: 0, left: 200 },
     { top: 0, left: 400},
   ]);
-
+  const [posicionesMobile, setPosicionesMobile] = useState([
+    { top: 0, left: 0 },
+    { top: 0, left: 120 },
+    { top: 0, left: 240},
+  ]);
+  const [posiciones, setPosiciones] = useState(posicionesPc)
+  
   const handleRotateCard = (index) => {
     switch (index) {
       case 0:
@@ -81,6 +87,20 @@ function App() {
       console.log(arrayCards)
     }
   }
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 620) {
+        setPosiciones(posicionesMobile);
+      } else {
+        setPosiciones(posicionesPc);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize();
+  
+    return () => window.removeEventListener('resize', handleResize);
+  }, [posicionesMobile, posicionesPc]);
 
   const mezclarCartas = () => {
 
