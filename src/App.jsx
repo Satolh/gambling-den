@@ -5,11 +5,10 @@ import { FaXTwitter,FaInstagram,FaGithub, FaTwitter } from "react-icons/fa6";
 
 
 const arrayCards = [
-  "public/card-Q.png",
-  "public/card-J-T.png",
-  "public/card-J-P.png"
+  "card-Q.png",
+  "card-J-T.png",
+  "card-J-P.png"
 ]
-const backCard = "https://i.pinimg.com/736x/32/1d/d7/321dd7863cb803d7b5523512b536d0e8.jpg"
 
 
 function App() {
