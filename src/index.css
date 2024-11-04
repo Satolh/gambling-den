@@ -57,7 +57,6 @@
   color: #Fff;
   letter-spacing: 1px;
   text-align: center;
-  padding-top: 3rem;
   font-size: 1.4rem;
 }
 .section-info{
@@ -126,10 +125,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 1.2rem;
   color: #fff;
   text-align: center;
-  position: absolute;
-  top: 49.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 1rem;
   border-bottom: 1px solid rgb(15, 144, 15);
 }
 .msj-lose{
@@ -139,10 +135,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 1.3rem;
   color: #fff;
   text-align: center;
-  position: absolute;
-  top: 49.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 1rem;
 }
 /* ____________________________FOOTER_____________________ */
 .footer{
@@ -233,11 +226,9 @@ input[type=number]::-webkit-outer-spin-button {
       height: 10rem;
     }
     .msj-select-card{
-      top: 43%;
       font-size: 1rem;
     }
     .msj-lose,.msj-win{
-      top: 43%;
       font-size: 0.9rem;
     }
   }
