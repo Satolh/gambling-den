@@ -10,10 +10,9 @@
   background: -webkit-linear-gradient(0deg, rgba(10,10,10,1) 16%, rgba(116,14,2,1) 100%);
   background: linear-gradient(0deg, rgb(23, 2, 2) 16%, rgba(116,14,2,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0a0a0a",endColorstr="#740e02",GradientType=1);
-  overflow-y: hidden;
 }
 .main{
-  padding-bottom: 15rem;
+  padding-bottom: 14rem;
 }
 .container-title{
   background-color: #4b0202;
@@ -129,6 +128,8 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
   margin-top: 1rem;
   border-bottom: 1px solid rgb(15, 144, 15);
+  width: max-content;
+  margin: 1rem auto 0 auto;
 }
 .msj-lose{
   border-bottom: 1px solid red;
@@ -137,7 +138,8 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 1.3rem;
   color: #fff;
   text-align: center;
-  margin-top: 1rem;
+  width: max-content;
+  margin: 1rem auto 0 auto;
 }
 /* ____________________________FOOTER_____________________ */
 .footer{
