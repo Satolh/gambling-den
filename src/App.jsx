@@ -132,7 +132,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className='container-main'>
 
     <main className='main'>
 
@@ -196,7 +196,8 @@ function App() {
         </div>
 
     </footer>
-    </>
+
+    </div>
   )
 }
 

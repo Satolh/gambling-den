@@ -3,15 +3,17 @@
   margin: 0;
   box-sizing: border-box;
 }
-.main{
+.container-main{
+  height: 100vh;
   background: rgb(10,10,10);
   background: -moz-linear-gradient(0deg, rgba(10,10,10,1) 16%, rgba(116,14,2,1) 100%);
   background: -webkit-linear-gradient(0deg, rgba(10,10,10,1) 16%, rgba(116,14,2,1) 100%);
   background: linear-gradient(0deg, rgb(23, 2, 2) 16%, rgba(116,14,2,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0a0a0a",endColorstr="#740e02",GradientType=1);
-  height: 100%;
   overflow-y: hidden;
-  padding-bottom: 12rem;
+}
+.main{
+  padding-bottom: 15rem;
 }
 .container-title{
   background-color: #4b0202;
@@ -209,6 +211,9 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   @media (max-width: 620px) {
+    .main{
+      padding-bottom: 16.5rem;
+    }
     .section-gambling{
       height: 10rem;
       width: 22rem;
